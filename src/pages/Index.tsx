@@ -84,9 +84,13 @@ export default function Index() {
       <nav className="sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Каравель
-            </h1>
+            <div className="flex items-center gap-3">
+              <img src="https://cdn.poehali.dev/files/2ffdb5c8-41d9-45bc-8bd1-886b76e75c7c.png" alt="Каравелла" className="h-12 md:h-14" />
+              <div className="flex flex-col">
+                <span className="text-lg md:text-xl font-bold text-primary">ООО «Каравелла»</span>
+                <span className="text-xs md:text-sm text-muted-foreground">Фабрика-Кухня № 1</span>
+              </div>
+            </div>
             <div className="hidden md:flex items-center gap-6">
               {['home', 'about', 'services', 'menu', 'gallery', 'contacts'].map((section) => (
                 <button
@@ -117,7 +121,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <Badge className="mb-6 text-lg px-4 py-2 bg-gradient-to-r from-primary to-secondary">
+            <Badge className="mb-6 text-lg px-4 py-2 bg-primary text-primary-foreground">
               Кейтеринг в Дубне
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
@@ -147,7 +151,7 @@ export default function Index() {
               О нас
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Компания "Каравель" — это команда профессионалов с многолетним опытом в сфере кейтеринга и организации питания. 
+              ООО «Каравелла» Фабрика-Кухня № 1 — это команда профессионалов с многолетним опытом в сфере кейтеринга и организации питания. 
               Мы создаем незабываемые кулинарные впечатления для ваших мероприятий.
             </p>
             <p className="text-lg text-muted-foreground">
@@ -433,7 +437,7 @@ export default function Index() {
       <footer className="bg-muted/50 border-t border-border py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground">© 2024 Каравель. Все права защищены.</p>
+            <p className="text-muted-foreground">© 2024 ООО «Каравелла» Фабрика-Кухня № 1. Все права защищены.</p>
             <div className="flex gap-4">
               {['Instagram', 'Facebook', 'Mail'].map((social) => (
                 <Button key={social} size="icon" variant="ghost" className="hover:bg-primary/10 hover:text-primary">
